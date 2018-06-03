@@ -3,7 +3,11 @@ import { DatePipe } from '@angular/common';
 
 /**
  * JSONDATE PIPE
- * Recibe una fecha en formate JSON de .NEN
+ * Recibe una fecha en formate JSON de .NET
+ * 
+ * 1 - Agrega `DatePipe` en los providers: [] de tu aplicación
+ * 2 - Agregar `JsonDatePipe` entre los declarations: [] de tu aplicación
+ * 3 - Utilizarlo en tus plantillas: {{ fecha | jsondate:'format - opcional' }}
  */
 @Pipe({name: 'jsondate'})
 export class JsonDatePipe implements PipeTransform {
